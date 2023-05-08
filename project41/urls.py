@@ -21,4 +21,7 @@ from cherry.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('registration/',registration,name='registration'),
+    path('home/',home,name='home'),
+    path('devi_login/',devi_login,name='devi_login'),
+    path('devi_logout/',devi_logout,name='devi_logout'),
 ]+static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
