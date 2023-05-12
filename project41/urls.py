@@ -24,4 +24,7 @@ urlpatterns = [
     path('home/',home,name='home'),
     path('devi_login/',devi_login,name='devi_login'),
     path('devi_logout/',devi_logout,name='devi_logout'),
+    path('display_profile/',display_profile,name='display_profile'),
+    path('change_password/',change_password,name='change_password'),
+    path('forget_password/',forget_password,name='forget_password'),
 ]+static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
